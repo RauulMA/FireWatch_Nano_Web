@@ -4,30 +4,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FireWatch Nano</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./src/css/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
 </head>
+
 <body>
-    <header>
-        <img src="./src/assets/imgs/Img_Logo_FireWatch_Nano_Branco_Sem_Fundo.png" alt="Logo do FireWatch Nano">
-        <h1>Fire Watch Nano</h1>
-        <div class="Alinhar_h1_ul">
-            <nav>
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <a href="#inicio" class="logo-area">
+                <img 
+                    src="./src/assets/imgs/Img_Logo_FireWatch_Nano_Branco_Sem_Fundo.png" 
+                    alt="Logo do FireWatch Nano"
+                    class="logo"
+                >
+                <h1>FireWatch Nano</h1>
+            </a>
+
+            <nav class="menu">
                 <ul>
-                    <li><a href="">Problema</a></li>
-                    <li><a href="">Tecnologia</a></li>
-                    <li><a href="">Objetivos</a></li>
-                    <li><a href="">Público-alvo</a></li>
-                    <li><a href="">Benefícios</a></li>
-                    <li><a href="">Aplicação no dia a dia</a></li>
+                    <li><a href="#problema">Problema</a></li>
+                    <li><a href="#tecnologia">Tecnologia</a></li>
+                    <li><a href="#objetivos">Objetivos</a></li>
+                    <li><a href="#publico">Público-alvo</a></li>
+                    <li><a href="#beneficios">Benefícios</a></li>
+                    <li><a href="#aplicacao">Aplicação</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main></main>
-    <footer></footer>
-    <script src="./src/js/script.js"></script>
+
+    <main>
+        <!-- HERO / INÍCIO -->
+        <section id="inicio" class="hero">
+            <div class="container hero-conteudo">
+                <div class="hero-texto">
+                    <span class="etiqueta">Tecnologia ambiental</span>
+                    <h2>Monitoramento preventivo de risco de incêndio</h2>
+                    <p>
+                        Sensores locais, alertas rápidos e apoio ao monitoramento ambiental conectado à tecnologia espacial.
+                    </p>
+
+                    <a href="#problema" class="botao">Conheça a solução</a>
+                </div>
+
+                <div class="hero-imagem">
+                    <img 
+                        src="./src/assets/imgs/Logo_FireWatch_Nano.png" 
+                        alt="Ilustração principal do projeto FireWatch Nano"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 1 - PROBLEMA -->
+        <section id="problema" class="secao secao-clara">
+            <div class="container secao-conteudo">
+                <div class="secao-texto">
+                    <span class="numero-secao">01</span>
+                    <h2>O problema</h2>
+                    <p>
+                        Incêndios em áreas rurais e florestais causam danos ambientais, sociais e econômicos todos os anos.
+                    </p>
+                    <p>
+                        Muitas regiões remotas possuem pouca infraestrutura para monitorar riscos antes que o fogo se espalhe.
+                    </p>
+                </div>
+
+                <div class="secao-imagem">
+                    <img 
+                        src="./src/assets/imgs/Incendio_Floresta.png" 
+                        alt="Imagem representando incêndios em áreas rurais e florestais"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2 - TECNOLOGIA -->
+        <section id="tecnologia" class="secao secao-escura">
+            <div class="container secao-conteudo invertida">
+                <div class="secao-texto">
+                    <span class="numero-secao">02</span>
+                    <h2>Tecnologia utilizada</h2>
+                    <p>
+                        O FireWatch Nano utiliza Arduino, sensor DHT, LDR, LEDs, buzzer e display LCD.
+                    </p>
+                    <p>
+                        A solução complementa o monitoramento espacial com dados locais observados por sensores.
+                    </p>
+                </div>
+
+                <div class="secao-imagem">
+                    <img 
+                        src="./src/assets/imgs/Sensor_Tecnologia_Espaco.png" 
+                        alt="Imagem representando sensores, Arduino e tecnologia espacial"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3 - OBJETIVOS -->
+        <section id="objetivos" class="secao secao-clara">
+            <div class="container">
+                <div class="titulo-central">
+                    <span class="numero-secao">03</span>
+                    <h2>Objetivos do projeto</h2>
+                    <p>
+                        O sistema transforma dados ambientais simples em alertas preventivos e compreensíveis.
+                    </p>
+                </div>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="icone">🌡️</div>
+                        <h3>Monitorar</h3>
+                        <p>Identificar temperatura, umidade e luminosidade em áreas vulneráveis.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="icone">🔥</div>
+                        <h3>Classificar</h3>
+                        <p>Calcular o risco e indicar níveis baixo, médio ou alto.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="icone">🚨</div>
+                        <h3>Alertar</h3>
+                        <p>Acionar LEDs, buzzer e mensagens para apoiar decisões rápidas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4 - PÚBLICO-ALVO -->
+        <section id="publico" class="secao secao-escura">
+            <div class="container secao-conteudo">
+                <div class="secao-texto">
+                    <span class="numero-secao">04</span>
+                    <h2>Público-alvo</h2>
+                    <p>
+                        A solução é voltada para comunidades rurais, produtores agrícolas, escolas e agentes ambientais.
+                    </p>
+                    <p>
+                        Também apoia projetos educacionais ligados à sustentabilidade, tecnologia e prevenção de desastres.
+                    </p>
+                </div>
+
+                <div class="secao-imagem">
+                    <img 
+                        src="./src/assets/imgs/Publico_Alvo.png" 
+                        alt="Imagem representando comunidades rurais e agentes ambientais"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 5 - BENEFÍCIOS -->
+        <section id="beneficios" class="secao secao-clara">
+            <div class="container">
+                <div class="titulo-central">
+                    <span class="numero-secao">05</span>
+                    <h2>Benefícios da solução</h2>
+                    <p>
+                        O FireWatch Nano oferece baixo custo, leitura simples e alertas objetivos.
+                    </p>
+                </div>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="icone">💰</div>
+                        <h3>Baixo custo</h3>
+                        <p>Utiliza componentes simples e acessíveis em simuladores e protótipos.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="icone">⚡</div>
+                        <h3>Resposta rápida</h3>
+                        <p>Classifica o risco e aciona sinais visuais e sonoros automaticamente.</p>
+                    </article>
+
+                    <article class="card">
+                        <div class="icone">🌱</div>
+                        <h3>Prevenção</h3>
+                        <p>Ajuda a identificar condições críticas antes que o fogo se espalhe.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 6 - APLICAÇÃO NO DIA A DIA -->
+        <section id="aplicacao" class="secao secao-escura">
+            <div class="container secao-conteudo invertida">
+                <div class="secao-texto">
+                    <span class="numero-secao">06</span>
+                    <h2>Aplicação no dia a dia</h2>
+                    <p>
+                        O sistema pode ser instalado em propriedades, reservas, escolas agrícolas ou áreas vulneráveis.
+                    </p>
+                    <p>
+                        Ao detectar risco elevado, o protótipo aciona LEDs, buzzer e mensagens no LCD.
+                    </p>
+                </div>
+
+                <div class="secao-imagem">
+                    <img 
+                        src="./src/assets/imgs/Dia_a_Dia.png" 
+                        alt="Imagem representando o uso diário do FireWatch Nano"
+                    >
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <p>FireWatch Nano © 2026</p>
+            <p>Raul RM571042</p>
+        </div>
+    </footer>
 </body>
 </html>
