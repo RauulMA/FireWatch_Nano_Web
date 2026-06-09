@@ -6,6 +6,10 @@ const imagens = [
 
 let indice = 0;
 
+const botaoTema = document.getElementById("btn-tema");
+
+let temaAtual = 0;
+
 function mostrarSlide() {
     document.getElementById("hero_slideshow").src = imagens[indice];
 }
@@ -25,3 +29,27 @@ function voltarSlide() {
     }
     mostrarSlide();
 }
+
+
+botaoTema.addEventListener("click", function () {
+    temaAtual++;
+
+    if (temaAtual > 2) {
+        temaAtual = 0;
+    }
+
+    document.body.classList.remove("tema-verde");
+    document.body.classList.remove("tema-azul");
+
+    if (temaAtual === 0) {
+        botaoTema.textContent = "Tema";
+    }
+    else if (temaAtual === 1) {
+        document.body.classList.add("tema-verde");
+        botaoTema.textContent = "Verde";
+    }
+    else {
+        document.body.classList.add("tema-azul");
+        botaoTema.textContent = "Azul";
+    }
+});
