@@ -32,7 +32,9 @@
                     <li><a href="#publico">Público-alvo</a></li>
                     <li><a href="#beneficios">Benefícios</a></li>
                     <li><a href="#aplicacao">Aplicação</a></li>
-                    <li><button id="btn-tema" class="btn-tema" type="button">Tema</button>
+                    <li><a href="#contato">Contate-nos</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><button id="btn-tema" class="btn-tema" type="button">Tema</button></li>
                 </ul>
             </nav>
         </div>
@@ -60,8 +62,8 @@
                     >
 
                     <div class="botoes-slide">
-                        <button onclick="voltarSlide()">Voltar</button>
-                        <button onclick="proximoSlide()">Próximo</button>
+                        <button type="button" onclick="voltarSlide()">Voltar</button>
+                        <button type="button" onclick="proximoSlide()">Próximo</button>
                     </div>
                 </div>
             </div>
@@ -225,9 +227,10 @@
             </div>
         </section>
         <!-- SEÇÃO 7 - FORM -->
-        <section class="contato-container">
+        <section id="contato" class="secao secao-clara contato-container">
             <div>
-                <h1>Nosso Contato</h1>
+                <span class="numero-secao">07</span>
+                <h2>Nosso Contato</h2>
                 
                 <div class="form-wrapper">
                     <form action="#" method="POST" class="form-estilizado">
@@ -246,6 +249,134 @@
                         </div>
                     </form>
                 </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 8 - QUIZ -->
+        <section id="quiz" class="secao secao-escura quiz-container">
+            <div class="container">
+                <div class="titulo-central">
+                    <span class="numero-secao">08</span>
+                    <h2>Quiz FireWatch Nano</h2>
+                    <p>Teste seus conhecimentos sobre prevenção, alertas e medidas de emergência.</p>
+                </div>
+
+                <form class="quiz-form">
+                    <div class="quiz-pergunta">
+                        <label for="q1">
+                            1. Se o FireWatch Nano indicar risco alto, o usuário deve agir imediatamente?
+                        </label>
+                        <select id="q1" name="q1" required>
+                            <option value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-pergunta">
+                        <label for="q2">
+                            2. O buzzer deve ser acionado quando o sistema identificar risco alto?
+                        </label>
+                        <select id="q2" name="q2" required>
+                            <option value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-pergunta">
+                        <label for="q3">
+                            3. Em risco baixo, ainda é importante continuar monitorando o ambiente?
+                        </label>
+                        <select id="q3" name="q3" required>
+                            <option value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-pergunta">
+                        <label for="q4">
+                            4. A baixa umidade do ar pode aumentar o risco de incêndio?
+                        </label>
+                        <select id="q4" name="q4" required>
+                            <option value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-pergunta">
+                        <label for="q5">
+                            5. Temperaturas elevadas podem contribuir para o aumento do risco de incêndio?
+                        </label>
+                        <select id="q5" name="q5" required>
+                            <option value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-pergunta">
+                        <label for="q6">
+                            6. Se o LED vermelho acender, o usuário pode ignorar o alerta?
+                        </label>
+                        <select id="q6" name="q6" required>
+                            <option value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-pergunta">
+                        <label for="q7">
+                            7. O FireWatch Nano calcula o risco usando apenas a luminosidade?
+                        </label>
+                        <select id="q7" name="q7" required>
+                            <option value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-pergunta">
+                        <label for="q8">
+                            8. Em risco médio, é recomendado verificar a área monitorada?
+                        </label>
+                        <select id="q8" name="q8" required>
+                            <option value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-pergunta">
+                        <label for="q9">
+                            9. Sensores locais podem complementar o monitoramento feito por satélites?
+                        </label>
+                        <select id="q9" name="q9" required>
+                            <option value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-pergunta">
+                        <label for="q10">
+                            10. Uma solução local pode ajudar regiões com pouca infraestrutura tecnológica?
+                        </label>
+                        <select id="q10" name="q10" required>
+                            <option value="">Selecione</option>
+                            <option value="sim">Sim</option>
+                            <option value="nao">Não</option>
+                        </select>
+                    </div>
+
+                    <div class="quiz-botao-area">
+                        <button type="submit" class="botao">Enviar respostas</button>
+                    </div>
+                    <p id="resultado-quiz"></p>
+                </form>
             </div>
         </section>
     </main>
