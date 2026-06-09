@@ -162,6 +162,12 @@ h3 {
     gap: 16px;
 }
 
+.hero-imagem img {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    object-fit: contain;
+}
 .botoes-slide {
     display: flex;
     justify-content: center;
