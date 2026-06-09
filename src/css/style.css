@@ -146,8 +146,8 @@ h3 {
     font-size: 0.78rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 10px 12px;
+    letter-spacing: 0.1px;
+    padding: 10px 0.5px;
     border-radius: 999px;
     transition: 0.3s;
 }
@@ -190,9 +190,11 @@ h3 {
 .hero-imagem img {
     width: 100%;
     max-width: 600px;
-    height: 400px;
+    height: 390px;
     object-fit: contain;
+    margin: 0 auto;
 }
+
 .botoes-slide {
     display: flex;
     justify-content: center;
@@ -237,11 +239,6 @@ h3 {
 .botao:hover {
     background-color: var(--cor-secundaria);
     transform: translateY(-2px);
-}
-
-.hero-imagem img {
-    max-height: 390px;
-    margin-left: auto;
 }
 
 /* =========================================================
@@ -462,6 +459,9 @@ h3 {
     }
 }
 
+/* =========================================================
+   FORMULÁRIO
+========================================================= */
 .contato-container div{
     display: flex;
     flex-direction: column;
@@ -520,4 +520,64 @@ button:hover {
 .form-estilizado textarea {
     height: 120px;
     resize: vertical;
+}
+
+/* =========================================================
+   QUIZ
+========================================================= */
+.quiz-container {
+    padding: 82px 0;
+}
+
+.quiz-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.quiz-pergunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    background-color: var(--cor-card);
+    color: var(--cor-texto);
+    padding: 20px;
+    border-radius: var(--raio);
+    box-shadow: var(--sombra);
+}
+
+.quiz-pergunta label {
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.quiz-pergunta select {
+    min-width: 140px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 2px solid var(--cor-borda);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.quiz-botao-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.quiz-botao-area button {
+    border: none;
+    cursor: pointer;
+}
+
+#resultado-quiz {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
 }
