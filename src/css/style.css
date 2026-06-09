@@ -148,10 +148,27 @@ h3 {
     gap: 48px;
 }
 
+
 .hero-texto,
 .hero-imagem {
     flex: 1;
 }
+
+.hero-imagem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.botoes-slide {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+
 
 .etiqueta {
     display: inline-block;
