@@ -413,3 +413,63 @@ h3 {
         text-align: center;
     }
 }
+
+.contato-container div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.botoes-contato {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--cor-primaria);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.form-estilizado {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.form-estilizado label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form-estilizado input, .form-estilizado textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--cor-secundaria);
+    background: white;
+    color: #333;
+    font-family: inherit;
+}
+
+.form-estilizado textarea {
+    height: 120px;
+    resize: vertical;
+}
