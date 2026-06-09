@@ -1,3 +1,6 @@
+// =========================================================
+// SLIDE SHOW
+// =========================================================
 const imagens = [
     './src/assets/imgs/Incendio_Floresta.png',
     './src/assets/imgs/Logo_FireWatch_Nano.png',
